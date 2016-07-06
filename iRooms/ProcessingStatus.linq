@@ -7,6 +7,11 @@
   </Connection>
 </Query>
 
-var d = DocumentInfo.Where (di => di.RoomID==946).Where (dii => dii.DocumentID == 612633);
+//var d = DocumentInfo.Where (di => di.RoomID==1836).OrderByDescending(di => di.DocumentID);
+//d.Dump();
+//220639
+//848612
+//848611
+var d = DocumentInfo.Where (di => di.RoomID==1836).Where (dii => dii.DocumentID == 848613);
 d.FirstOrDefault ( ).ProcessingStatus = 3;
 SubmitChanges();
